@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		EA699A9725668D4700A14C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA699A9625668D4700A14C75 /* AppDelegate.swift */; };
 		EA699A9925668D4700A14C75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA699A9825668D4700A14C75 /* SceneDelegate.swift */; };
-		EA699A9B25668D4700A14C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA699A9A25668D4700A14C75 /* ViewController.swift */; };
+		EA699A9B25668D4700A14C75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA699A9A25668D4700A14C75 /* LoginViewController.swift */; };
 		EA699A9E25668D4700A14C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA699A9C25668D4700A14C75 /* Main.storyboard */; };
 		EA699AA025668D4B00A14C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA699A9F25668D4B00A14C75 /* Assets.xcassets */; };
 		EA699AA325668D4B00A14C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA699AA125668D4B00A14C75 /* LaunchScreen.storyboard */; };
+		EA699AAD2566904700A14C75 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = EA699AAC2566904700A14C75 /* SwiftSoup */; };
+		EA699AB1256695A800A14C75 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA699AB0256695A800A14C75 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA699A9325668D4700A14C75 /* ParseHTML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseHTML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA699A9625668D4700A14C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA699A9825668D4700A14C75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA699A9A25668D4700A14C75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA699A9A25668D4700A14C75 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EA699A9D25668D4700A14C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA699A9F25668D4B00A14C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA699AA225668D4B00A14C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA699AA425668D4B00A14C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA699AB0256695A800A14C75 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA699AAD2566904700A14C75 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +62,9 @@
 			children = (
 				EA699A9625668D4700A14C75 /* AppDelegate.swift */,
 				EA699A9825668D4700A14C75 /* SceneDelegate.swift */,
-				EA699A9A25668D4700A14C75 /* ViewController.swift */,
+				EA699A9A25668D4700A14C75 /* LoginViewController.swift */,
 				EA699A9C25668D4700A14C75 /* Main.storyboard */,
+				EA699AB0256695A800A14C75 /* WebViewController.swift */,
 				EA699A9F25668D4B00A14C75 /* Assets.xcassets */,
 				EA699AA125668D4B00A14C75 /* LaunchScreen.storyboard */,
 				EA699AA425668D4B00A14C75 /* Info.plist */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = ParseHTML;
+			packageProductDependencies = (
+				EA699AAC2566904700A14C75 /* SwiftSoup */,
+			);
 			productName = ParseHTML;
 			productReference = EA699A9325668D4700A14C75 /* ParseHTML.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = EA699A8A25668D4700A14C75;
+			packageReferences = (
+				EA699AAB2566904700A14C75 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = EA699A9425668D4700A14C75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA699A9B25668D4700A14C75 /* ViewController.swift in Sources */,
+				EA699A9B25668D4700A14C75 /* LoginViewController.swift in Sources */,
 				EA699A9725668D4700A14C75 /* AppDelegate.swift in Sources */,
 				EA699A9925668D4700A14C75 /* SceneDelegate.swift in Sources */,
+				EA699AB1256695A800A14C75 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68663464K3;
 				INFOPLIST_FILE = ParseHTML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.doyeon.ParseHTML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68663464K3;
 				INFOPLIST_FILE = ParseHTML/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.doyeon.ParseHTML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA699AAB2566904700A14C75 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA699AAC2566904700A14C75 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA699AAB2566904700A14C75 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA699A8B25668D4700A14C75 /* Project object */;
 }
