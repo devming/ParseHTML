@@ -15,6 +15,7 @@
 		EA699AA325668D4B00A14C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA699AA125668D4B00A14C75 /* LaunchScreen.storyboard */; };
 		EA699AAD2566904700A14C75 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = EA699AAC2566904700A14C75 /* SwiftSoup */; };
 		EA699AB1256695A800A14C75 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA699AB0256695A800A14C75 /* WebViewController.swift */; };
+		EA699B2F256D4E9300A14C75 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA699B2E256D4E9300A14C75 /* LayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		EA699AA225668D4B00A14C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA699AA425668D4B00A14C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA699AB0256695A800A14C75 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EA699B2E256D4E9300A14C75 /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				EA699A9625668D4700A14C75 /* AppDelegate.swift */,
 				EA699A9825668D4700A14C75 /* SceneDelegate.swift */,
 				EA699A9A25668D4700A14C75 /* LoginViewController.swift */,
+				EA699B2E256D4E9300A14C75 /* LayoutView.swift */,
 				EA699A9C25668D4700A14C75 /* Main.storyboard */,
 				EA699AB0256695A800A14C75 /* WebViewController.swift */,
 				EA699A9F25668D4B00A14C75 /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			files = (
 				EA699A9B25668D4700A14C75 /* LoginViewController.swift in Sources */,
 				EA699A9725668D4700A14C75 /* AppDelegate.swift in Sources */,
+				EA699B2F256D4E9300A14C75 /* LayoutView.swift in Sources */,
 				EA699A9925668D4700A14C75 /* SceneDelegate.swift in Sources */,
 				EA699AB1256695A800A14C75 /* WebViewController.swift in Sources */,
 			);

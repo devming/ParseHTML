@@ -22,16 +22,16 @@ class LoginViewController: UIViewController {
             case 1:
                 vc.url = "https://m.hanatour.com/com/lgi/CHPC0LGI0106M100"
             case 2:
-                vc.url = "https://tour.interpark.com/gate/Login.aspx?_method=initial&mbn=tour&mln=login&goUrl=https%3A//tour.interpark.com/airticket/domestic/main.aspx%3Fgclid%3DCjwKCAiAzNj9BRBDEiwAPsL0d0e3w600NLF_lk1oDh1X4BKpG1Zg3hA4XY_7tIWvy7ZNJnQAcqTD3BoCwkAQAvD_BwE"
+                vc.url = "https://mtour.interpark.com/MyPage.aspx?mbn=tourmobile&mln=m_main_mypage"
             case 3:
                 vc.url = "https://nid.naver.com/nidlogin.login?svctype=262144&amp;url=http://m.naver.com/aside/"
             default: break
             }
-            
-            
             present(vc, animated: true)
         }
     }
-  
 }
 
+extension LoginViewController {
+    
+}
