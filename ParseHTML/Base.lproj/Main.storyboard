@@ -101,83 +101,120 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한번에 연결" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLR-ho-vhp">
-                                <rect key="frame" x="146.33333333333334" y="94" width="113.33333333333334" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPm-1n-RTs" customClass="LayoutView" customModule="ParseHTML" customModuleProvider="target">
-                                <rect key="frame" x="20" y="162" width="388" height="65"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egb-Oh-U3Y">
+                                <rect key="frame" x="0.0" y="44" width="428" height="247"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CD-SR-a9d">
-                                        <rect key="frame" x="113" y="18" width="147" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="카카오계정으로 간편연결">
-                                            <color key="titleColor" systemColor="labelColor"/>
-                                        </state>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kakao" translatesAutoresizingMaskIntoConstraints="NO" id="77n-Iz-bYl">
-                                        <rect key="frame" x="49" y="13" width="65" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한번에 연결" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLR-ho-vhp">
+                                        <rect key="frame" x="10" y="10" width="408" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SNS계정으로 한번에 여행 기록을 불러올 수 있어요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFA-GL-yPh">
+                                        <rect key="frame" x="10" y="50" width="408" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1m5-FY-O3j" customClass="LayoutView" customModule="ParseHTML" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="96" width="408" height="66"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-Zk-Sdy">
+                                                <rect key="frame" x="110" y="24" width="288" height="18"/>
+                                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="네이버계정으로 간편연결">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naver" translatesAutoresizingMaskIntoConstraints="NO" id="t89-sb-TEY">
+                                                <rect key="frame" x="50" y="8" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="3H8-1G-oCq"/>
+                                                    <constraint firstAttribute="width" constant="50" id="gHL-hg-8Pe"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Lj0-Zk-Sdy" secondAttribute="trailing" constant="10" id="0g9-LN-bnN"/>
+                                            <constraint firstItem="t89-sb-TEY" firstAttribute="centerY" secondItem="1m5-FY-O3j" secondAttribute="centerY" id="H3j-gG-ghc"/>
+                                            <constraint firstAttribute="height" constant="66" id="NHA-cD-Lwm"/>
+                                            <constraint firstItem="t89-sb-TEY" firstAttribute="leading" secondItem="1m5-FY-O3j" secondAttribute="leading" constant="50" id="Uxh-GT-Hgo"/>
+                                            <constraint firstItem="Lj0-Zk-Sdy" firstAttribute="leading" secondItem="t89-sb-TEY" secondAttribute="trailing" constant="10" id="nkr-ZE-TNk"/>
+                                            <constraint firstItem="Lj0-Zk-Sdy" firstAttribute="centerY" secondItem="1m5-FY-O3j" secondAttribute="centerY" id="oEC-T8-xvi"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemGray4Color"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPm-1n-RTs" customClass="LayoutView" customModule="ParseHTML" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="172" width="408" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CD-SR-a9d">
+                                                <rect key="frame" x="0.0" y="0.0" width="408" height="65"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                                                <state key="normal" image="kakao_login_large_wide">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="7CD-SR-a9d" secondAttribute="bottom" id="BC7-Ij-VK1"/>
+                                            <constraint firstAttribute="trailing" secondItem="7CD-SR-a9d" secondAttribute="trailing" id="OVp-Gp-uvh"/>
+                                            <constraint firstItem="7CD-SR-a9d" firstAttribute="leading" secondItem="OPm-1n-RTs" secondAttribute="leading" id="ahZ-4z-mXW"/>
+                                            <constraint firstItem="7CD-SR-a9d" firstAttribute="top" secondItem="OPm-1n-RTs" secondAttribute="top" id="zeu-Rx-l2n"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemGray4Color"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="01m-Rt-gT0"/>
+                                    <constraint firstItem="1m5-FY-O3j" firstAttribute="leading" secondItem="ZLR-ho-vhp" secondAttribute="leading" id="9ZX-Ch-BMN"/>
+                                    <constraint firstItem="ZLR-ho-vhp" firstAttribute="top" secondItem="egb-Oh-U3Y" secondAttribute="top" constant="10" id="IO7-bv-zHe"/>
+                                    <constraint firstItem="1m5-FY-O3j" firstAttribute="trailing" secondItem="ZLR-ho-vhp" secondAttribute="trailing" id="KsT-Sk-8ar"/>
+                                    <constraint firstAttribute="bottom" secondItem="OPm-1n-RTs" secondAttribute="bottom" constant="10" id="L0x-oI-j94"/>
+                                    <constraint firstItem="OPm-1n-RTs" firstAttribute="leading" secondItem="ZLR-ho-vhp" secondAttribute="leading" id="M4D-SH-JhP"/>
+                                    <constraint firstItem="BFA-GL-yPh" firstAttribute="top" secondItem="ZLR-ho-vhp" secondAttribute="bottom" constant="10" id="OD7-ai-sgx"/>
+                                    <constraint firstItem="BFA-GL-yPh" firstAttribute="trailing" secondItem="ZLR-ho-vhp" secondAttribute="trailing" id="QaJ-nW-FZY"/>
+                                    <constraint firstItem="BFA-GL-yPh" firstAttribute="leading" secondItem="ZLR-ho-vhp" secondAttribute="leading" id="TRA-z3-Z4D"/>
+                                    <constraint firstItem="1m5-FY-O3j" firstAttribute="top" secondItem="BFA-GL-yPh" secondAttribute="bottom" constant="30" id="dWV-rN-jqV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZLR-ho-vhp" secondAttribute="trailing" constant="10" id="dq9-ee-Rha"/>
+                                    <constraint firstItem="ZLR-ho-vhp" firstAttribute="leading" secondItem="egb-Oh-U3Y" secondAttribute="leading" constant="10" id="fsg-bI-cL4"/>
+                                    <constraint firstItem="OPm-1n-RTs" firstAttribute="top" secondItem="1m5-FY-O3j" secondAttribute="bottom" constant="10" id="kA3-VO-K01"/>
+                                    <constraint firstItem="OPm-1n-RTs" firstAttribute="height" secondItem="1m5-FY-O3j" secondAttribute="height" multiplier="0.984848" id="oLE-1e-XH8"/>
+                                    <constraint firstItem="OPm-1n-RTs" firstAttribute="trailing" secondItem="ZLR-ho-vhp" secondAttribute="trailing" id="rXh-ah-U4U"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="systemGray4Color"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1m5-FY-O3j" customClass="LayoutView" customModule="ParseHTML" customModuleProvider="target">
-                                <rect key="frame" x="20" y="240" width="388" height="66"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-Zk-Sdy">
-                                        <rect key="frame" x="113" y="18" width="147" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="네이버계정으로 간편연결">
-                                            <color key="titleColor" systemColor="labelColor"/>
-                                        </state>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="naver" translatesAutoresizingMaskIntoConstraints="NO" id="t89-sb-TEY">
-                                        <rect key="frame" x="50" y="13" width="65" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="systemGray4Color"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfT-Uy-HWX">
+                                <rect key="frame" x="0.0" y="299" width="428" height="495"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SNS계정으로 한번에 여행 기록을 불러올 수 있어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFA-GL-yPh">
-                                <rect key="frame" x="83" y="132" width="261.66666666666669" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="하나씩 연결" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEV-IQ-ZKg">
                                 <rect key="frame" x="139" y="332" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -293,26 +330,21 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1m5-FY-O3j" firstAttribute="trailing" secondItem="OPm-1n-RTs" secondAttribute="trailing" id="0pW-NQ-3qO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OPm-1n-RTs" secondAttribute="trailing" constant="20" id="Csv-Yj-3lq"/>
-                            <constraint firstItem="ZLR-ho-vhp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Haa-0B-A0a"/>
-                            <constraint firstItem="BFA-GL-yPh" firstAttribute="centerX" secondItem="ZLR-ho-vhp" secondAttribute="centerX" constant="10.75" id="QcC-iO-dIo"/>
-                            <constraint firstItem="OPm-1n-RTs" firstAttribute="top" secondItem="BFA-GL-yPh" secondAttribute="top" constant="30" id="Ql5-Ae-yvl"/>
-                            <constraint firstItem="1m5-FY-O3j" firstAttribute="height" secondItem="OPm-1n-RTs" secondAttribute="height" multiplier="1.01538" id="Zag-xt-bpH"/>
-                            <constraint firstItem="OPm-1n-RTs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dFI-fg-IrD"/>
-                            <constraint firstItem="1m5-FY-O3j" firstAttribute="leading" secondItem="OPm-1n-RTs" secondAttribute="leading" id="ha2-oW-VPa"/>
-                            <constraint firstItem="1m5-FY-O3j" firstAttribute="top" secondItem="OPm-1n-RTs" secondAttribute="bottom" constant="13" id="nNR-4j-Jl7"/>
-                            <constraint firstItem="BFA-GL-yPh" firstAttribute="top" secondItem="ZLR-ho-vhp" secondAttribute="top" constant="38" id="ng1-gv-09G"/>
-                            <constraint firstItem="ZLR-ho-vhp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-11" id="nrT-iC-OD4"/>
+                            <constraint firstItem="egb-Oh-U3Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KR4-FA-dlZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egb-Oh-U3Y" secondAttribute="trailing" id="S5W-o1-szE"/>
+                            <constraint firstItem="egb-Oh-U3Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="avC-Dc-aY0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AEe-RY-Hst"/>
+                    <connections>
+                        <outlet property="kakaoButton" destination="7CD-SR-a9d" id="Ljp-IN-F20"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="108.48214285714285"/>
+            <point key="canvasLocation" x="114.95327102803738" y="108.20734341252701"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="2GQ-me-IDD">
@@ -350,12 +382,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hanatour" width="302" height="304"/>
-        <image name="interpark" width="512" height="512"/>
-        <image name="kakao" width="728" height="728"/>
-        <image name="naver" width="512" height="512"/>
-        <image name="travel" width="512" height="512"/>
-        <image name="yeogiudde" width="225" height="225"/>
+        <image name="hanatour" width="151" height="152"/>
+        <image name="interpark" width="256" height="256"/>
+        <image name="kakao_login_large_wide" width="300" height="45"/>
+        <image name="naver" width="256" height="256"/>
+        <image name="travel" width="256" height="256"/>
+        <image name="yeogiudde" width="112.5" height="112.5"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

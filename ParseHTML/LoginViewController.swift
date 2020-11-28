@@ -9,6 +9,9 @@ import UIKit
 import SwiftSoup
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var kakaoButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
